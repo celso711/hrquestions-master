@@ -34,7 +34,9 @@
 
         return directive;
     }
-
+    $scope.numPages = function () {
+        return Math.ceil($scope.todos.length / $scope.numPerPage);
+    };
     /**
      * Directive definition function of 'pagination' directive.
      * 
